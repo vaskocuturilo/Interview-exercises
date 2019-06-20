@@ -36,10 +36,8 @@ public final class ReverseString {
      *
      * @param text the text
      */
-    public static void reverseWithBuilder(final String text) {
+    public static String reverseWithBuilder(final String text) {
         final StringBuilder builder = new StringBuilder(text);
-        builder.reverse();
-        final PrintStream printStream = System.out;
-        printStream.print(builder.toString() + " ");
+        return new String(builder.reverse());
     }
 }

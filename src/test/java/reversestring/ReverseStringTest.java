@@ -15,6 +15,6 @@ public class ReverseStringTest {
     @Test
     public void reverseWithBuilder() {
         String text = "Hello world";
-        assertEquals("dlrow olleH",ReverseString.reverseWithoutBuilder(text));
+        assertEquals("dlrow olleH", ReverseString.reverseWithBuilder(text));
     }
 }
