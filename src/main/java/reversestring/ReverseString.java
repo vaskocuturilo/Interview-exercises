@@ -1,7 +1,5 @@
 package reversestring;
 
-import java.io.PrintStream;
-
 /**
  * Class Reverse string.
  */

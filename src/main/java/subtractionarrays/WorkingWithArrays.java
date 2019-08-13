@@ -18,7 +18,8 @@ public final class WorkingWithArrays {
 
     /**
      * Subtraction first array from second.
-     *  @param firstArray  the first array
+     *
+     * @param firstArray  the first array
      * @param secondArray the second array
      */
     public static int[] subtractionSecondArrayFromFirst(final int[] firstArray, final int... secondArray) {
@@ -41,11 +42,11 @@ public final class WorkingWithArrays {
         for (final int a : firstIntList) {
             printStream.println(a);
         }
-        //  System.out.println(a);
+
         return firstArray;
     }
 
     public static void main(String[] args) {
-        WorkingWithArrays.subtractionSecondArrayFromFirst(new int[]{1,2,3,4,5,6},new int[]{1,2,3,4,5});
+        WorkingWithArrays.subtractionSecondArrayFromFirst(new int[]{1, 2, 3, 4, 5, 6}, new int[]{1, 2, 3, 4, 5});
     }
 }
