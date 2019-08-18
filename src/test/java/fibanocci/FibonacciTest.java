@@ -1,5 +1,6 @@
 package fibanocci;
 
+import factorial.Factorial;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -7,6 +8,14 @@ import static org.junit.Assert.*;
 public class FibonacciTest {
 
     @Test
-    public void fibonacci() {
+    public void fibonacciEven() {
+        assertEquals(3, Fibonacci.fibonacci(4));
+
+    }
+
+    @Test
+    public void fibonacciNotEven() {
+        assertEquals(2, Fibonacci.fibonacci(3));
+
     }
 }
