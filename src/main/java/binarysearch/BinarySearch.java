@@ -1,28 +1,27 @@
 package binarysearch;
 
 import java.io.PrintStream;
-import java.lang.reflect.Array;
-import java.util.Arrays;
 
 public class BinarySearch {
 
-    public void binarySearch(int[] inputArray, int key, int left, int right) {
+    public int binarySearch(int[] inputArray, int left, int right, int searchElement) {
         PrintStream printStream = System.out;
         int middle = 0;
 
         while (right >= left) {
-            if (inputArray[middle] < key)
+            if (inputArray[middle] < searchElement) {
                 left = middle + 1;
-            else if (inputArray[middle] == key) {
-                printStream.println(key + " found at location " + (middle + 1) + ".");
+            } else if (inputArray[middle] == searchElement) {
+                printStream.println(searchElement + " Found in Array " + (middle + 1));
                 break;
             } else
                 right = middle - 1;
-
             middle = (left + right) / 2;
         }
         if (left > right)
-            printStream.println(key + " isn't present in the list.\n");
+            printStream.println(searchElement + " Not found in array. ");
+
+        return middle + 1;
     }
 
     public int recursionBinarySearch(int[] inputNumber, int left, int right, int searchElement) {
@@ -45,5 +44,12 @@ public class BinarySearch {
         }
 
         return -1;
+    }
+
+    public static void main(String[] args) {
+        BinarySearch binarySearch = new BinarySearch();
+        int[] inputNumber = {10, 20, 30, 40};
+        binarySearch.binarySearch(inputNumber, 0, inputNumber.length - 1, 20);
+
     }
 }
