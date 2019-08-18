@@ -3,6 +3,9 @@ package parsestring;
 public class ParseString {
 
     public int[] parseString(String inputText) {
+        if (inputText.length() == 0 || inputText.length() <= 1) {
+            return null;
+        }
 
         String strArr[] = inputText.split("[^\\d]+");
 
