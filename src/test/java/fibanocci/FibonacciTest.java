@@ -1,6 +1,5 @@
 package fibanocci;
 
-import factorial.Factorial;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
