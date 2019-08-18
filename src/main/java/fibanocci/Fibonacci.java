@@ -26,15 +26,4 @@ public class Fibonacci {
 
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
-
-
-    /**
-     * Main.
-     *
-     * @param args the args
-     */
-    public static void main(String[] args) {
-
-        fibonacci(6);
-    }
 }

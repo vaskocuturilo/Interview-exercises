@@ -1,8 +1,5 @@
 package parsestring;
 
-import java.io.PrintStream;
-import java.util.Arrays;
-
 public class ParseString {
 
     public int[] parseString(String inputText) {
@@ -15,13 +12,5 @@ public class ParseString {
 
         }
         return numArr;
-    }
-
-    public static void main(String[] args) {
-
-        String str = "44fdvvsd94.;h36s67.45c56";
-        ParseString parseString = new ParseString();
-        PrintStream printStream = System.out;
-        printStream.print(" " + Arrays.toString(parseString.parseString(str)));
     }
 }

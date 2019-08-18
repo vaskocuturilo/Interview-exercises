@@ -1,8 +1,5 @@
 package quicksort;
 
-import java.io.PrintStream;
-import java.util.Arrays;
-
 class QuickSort {
 
     public static void quickSort(int[] inputNumber, int begin, int end) {
@@ -34,14 +31,4 @@ class QuickSort {
 
         return i + 1;
     }
-
-    public static void main(String[] args) {
-        PrintStream printStream = System.out;
-        int[] inputArray = {6, 3, 2, 1, 0, 8, 99, 33, 22};
-        int left = 0;
-        int right = inputArray.length - 1;
-        QuickSort.quickSort(inputArray, left, right);
-        printStream.println(Arrays.toString(inputArray));
-    }
-
 }

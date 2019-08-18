@@ -46,12 +46,4 @@ public class BinarySearch {
 
         return -1;
     }
-
-    public static void main(String[] args) {
-        BinarySearch binarySearch = new BinarySearch();
-        PrintStream printStream = System.out;
-        int[] inputNumber = {10, 20, 30, 40};
-        int result = binarySearch.recursionBinarySearch(inputNumber, 0, inputNumber.length - 1, 40);
-        printStream.println(Arrays.toString(inputNumber));
-        printStream.println(result); }
 }
