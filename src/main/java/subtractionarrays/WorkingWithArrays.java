@@ -25,28 +25,24 @@ public final class WorkingWithArrays {
     public static int[] subtractionSecondArrayFromFirst(final int[] firstArray, final int... secondArray) {
         final List<Integer> firstIntList = new ArrayList<Integer>() {
             {
-                for (int a : firstArray) {
-                    add(a);
+                for (int i : firstArray) {
+                    add(i);
                 }
             }
         };
         final List<Integer> secondIntList = new ArrayList<Integer>() {
             {
-                for (int a : secondArray) {
-                    add(a);
+                for (int i : secondArray) {
+                    add(i);
                 }
             }
         };
         firstIntList.removeAll(secondIntList);
         final PrintStream printStream = System.out;
-        for (final int a : firstIntList) {
-            printStream.println(a);
+        for (final int i : firstIntList) {
+            printStream.println(i);
         }
 
         return firstArray;
-    }
-
-    public static void main(String[] args) {
-        WorkingWithArrays.subtractionSecondArrayFromFirst(new int[]{1, 2, 3, 4, 5, 6}, new int[]{1, 2, 3, 4, 5});
     }
 }

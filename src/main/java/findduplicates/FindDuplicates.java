@@ -3,8 +3,17 @@ package findduplicates;
 import java.io.PrintStream;
 import java.util.HashSet;
 
+
+/**
+ * The class FindDuplicates.
+ */
 public class FindDuplicates {
 
+    /**
+     * Method FindDuplicatesWithoutHash.
+     *
+     * @param inputNumber the input number
+     */
     public void findDuplicatesWithoutHash(int... inputNumber) {
         PrintStream printStream = System.out;
         for (int i = 0; i < inputNumber.length; i++) {
@@ -18,6 +27,11 @@ public class FindDuplicates {
     }
 
 
+    /**
+     * Method FindDuplicatesWithHash.
+     *
+     * @param inputNumber the input number
+     */
     public void findDuplicatesWithHash(int... inputNumber) {
         PrintStream printStream = System.out;
         if (inputNumber == null || inputNumber.length <= 1) {

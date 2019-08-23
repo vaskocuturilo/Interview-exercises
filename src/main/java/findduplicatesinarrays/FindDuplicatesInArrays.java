@@ -3,8 +3,18 @@ package findduplicatesinarrays;
 import java.io.PrintStream;
 import java.util.HashSet;
 
+
+/**
+ * The class FindDuplicatesInArrays.
+ */
 public class FindDuplicatesInArrays {
 
+    /**
+     * Find duplicatesInArraysWithHash.
+     *
+     * @param firstArray  the first array
+     * @param secondArray the second array
+     */
     public void findDuplicatesInArraysWithHash(int[] firstArray, int[] secondArray) {
         PrintStream printStream = System.out;
         if ((firstArray == null || firstArray.length <= 1) && (secondArray == null || secondArray.length <= 1)) {
@@ -23,6 +33,12 @@ public class FindDuplicatesInArrays {
     }
 
 
+    /**
+     * The method FindDuplicatesInArraysWithoutHash.
+     *
+     * @param firstArray  the first array
+     * @param secondArray the second array
+     */
     public void findDuplicatesInArraysWithoutHash(int[] firstArray, int[] secondArray) {
         PrintStream printStream = System.out;
 

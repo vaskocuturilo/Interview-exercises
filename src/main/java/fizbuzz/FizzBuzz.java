@@ -2,8 +2,15 @@ package fizbuzz;
 
 import java.io.PrintStream;
 
+
+/**
+ * The class FizzBuzz.
+ */
 public class FizzBuzz {
 
+    /**
+     * Method getFizzBuzz.
+     */
     public static void getFizzBuzz() {
         PrintStream printStream = System.out;
         for (int i = 1; i < 100; i++) {

@@ -2,8 +2,21 @@ package binarysearch;
 
 import java.io.PrintStream;
 
+
+/**
+ * The type Binary search.
+ */
 public class BinarySearch {
 
+    /**
+     * Method Binary search int.
+     *
+     * @param inputArray    the input array
+     * @param left          the left
+     * @param right         the right
+     * @param searchElement the search element
+     * @return the int
+     */
     public int binarySearch(int[] inputArray, int left, int right, int searchElement) {
         PrintStream printStream = System.out;
         int middle = 0;
@@ -24,6 +37,15 @@ public class BinarySearch {
         return middle + 1;
     }
 
+    /**
+     * Method Recursion binary search int.
+     *
+     * @param inputNumber   the input number
+     * @param left          the left
+     * @param right         the right
+     * @param searchElement the search element
+     * @return the int
+     */
     public int recursionBinarySearch(int[] inputNumber, int left, int right, int searchElement) {
 
         if (right >= left) {
@@ -44,12 +66,5 @@ public class BinarySearch {
         }
 
         return -1;
-    }
-
-    public static void main(String[] args) {
-        BinarySearch binarySearch = new BinarySearch();
-        int[] inputNumber = {10, 20, 30, 40};
-        binarySearch.binarySearch(inputNumber, 0, inputNumber.length - 1, 20);
-
     }
 }
