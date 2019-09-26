@@ -13,10 +13,10 @@ public final class Factorial {
     }
 
     /**
-     * Gets factorial.
+     * Gets totalArray.
      *
      * @param number the number
-     * @return the factorial
+     * @return the totalArray
      */
     public static int getFactorial(final int number) {
         if (number < 0) {
