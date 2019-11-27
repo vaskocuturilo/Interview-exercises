@@ -16,7 +16,7 @@ class QuickSort {
      * <p>
      * example:
      * int[] inputNumber={22,2,1,3};
-     * quickSort(inputNumber, 0, inputNumber.length-1);
+     * reverseString(inputNumber, 0, inputNumber.length-1);
      */
     public static int[] quickSort(int[] inputNumber, int begin, int end) {
         if (begin < end) {

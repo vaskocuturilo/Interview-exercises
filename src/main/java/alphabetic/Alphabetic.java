@@ -23,8 +23,6 @@ public class Alphabetic {
      * @param inputString the input string
      */
     public ConcurrentHashMap<Character, Integer> countOfNumberCharacterElements(final String inputString) {
-        final PrintStream printStream = System.out;
-
         final ConcurrentHashMap<Character, Integer> charMap = new ConcurrentHashMap<>();
         final char[] newArray = inputString.toCharArray();
 
