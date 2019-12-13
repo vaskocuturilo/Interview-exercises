@@ -1,8 +1,6 @@
 package mergearrays;
 
-import java.io.PrintStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -29,7 +27,6 @@ public class ConcatArrays {
     public String[] mergeArrays(final String[] first, final String... second) {
 
         final List<String> mergeArrays = new ArrayList<String>(first.length + second.length);
-        final PrintStream printStream = System.out;
         Collections.addAll(mergeArrays, first);
         Collections.addAll(mergeArrays, second);
         return mergeArrays.toArray(new String[0]);
