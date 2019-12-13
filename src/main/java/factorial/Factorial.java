@@ -28,4 +28,15 @@ public final class Factorial {
         }
         return temp;
     }
+
+    /**
+     * Gets recursion factorial.
+     *
+     * @param inputNumber the input number.
+     * @return the recursion factorial
+     */
+    public long getRecursionFactorial(int inputNumber) {
+        if (inputNumber > 20) throw new IllegalArgumentException(inputNumber + " is out of range");
+        return (1 > inputNumber) ? 1 : inputNumber * getRecursionFactorial(inputNumber - 1);
+    }
 }
