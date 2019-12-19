@@ -30,10 +30,10 @@ public final class Factorial {
     }
 
     /**
-     * Gets recursion factorial.
+     * Gets recursion quickSort.
      *
      * @param inputNumber the input number.
-     * @return the recursion factorial
+     * @return the recursion quickSort
      */
     public long getRecursionFactorial(int inputNumber) {
         if (inputNumber > 20) throw new IllegalArgumentException(inputNumber + " is out of range");
