@@ -22,7 +22,6 @@ public class ValuesInArray {
      * @return the min value in array.
      */
     public int getMinValueInArray(final int... inputNumber) {
-
         if (inputNumber == null || inputNumber.length <= 1) {
             return 1;
         }
@@ -46,8 +45,6 @@ public class ValuesInArray {
      * @return the max value in array.
      */
     public int getMaxValueInArray(final int... inputNumber) {
-
-
         if (inputNumber == null || inputNumber.length <= 1) {
             return 1;
         }

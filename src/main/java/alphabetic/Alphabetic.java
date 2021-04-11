@@ -1,6 +1,5 @@
 package alphabetic;
 
-import java.io.PrintStream;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -38,6 +37,6 @@ public class Alphabetic {
             }
         }
 
-       return charMap;
+        return charMap;
     }
 }
